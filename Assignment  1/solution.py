@@ -25,7 +25,10 @@ def vigenere(type):
             idx = 0
             for i in Input:  
                 idx %= len(k1)
-                if i.islower() :
+                if i.isalpha() == False : 
+                    output += i
+                    continue
+                elif i.islower() :
                     output += chr(((ord(i)-97+ord(k1[idx])-97)%26)+97)
                 else : 
                     output += chr(((ord(i)-65+ord(k1[idx])-65)%26)+65)
@@ -35,7 +38,10 @@ def vigenere(type):
         idx = 0
         for i in Input:
             idx %= len(k1)
-            if i.islower() :
+            if i.isalpha() == False : 
+                    output += i
+                    continue
+            elif i.islower() :
                 output += chr(((ord(i)-97-ord(k1[idx])-97+26)%26)+97)
             else : 
                 output += chr(((ord(i)-65-ord(k1[idx])-65+26)%26)+65)
@@ -50,7 +56,10 @@ def affine(type):
     if type[0] == 'e':
            
             for i in Input:  
-                if i.islower() :
+                if i.isalpha() == False : 
+                    output += i
+                    continue
+                elif i.islower() :
                     output += chr( ( (ord(i) - 97 ) * key1 + key2 ) %26+97)
                 else : output += chr( ( (ord(i) - 65 ) * key1 + key2 ) %26+65)
                  
@@ -62,7 +71,10 @@ def affine(type):
                 break
         
         for i in Input:
-            if i.islower() :
+            if i.isalpha() == False : 
+                    output += i
+                    continue
+            elif i.islower() :
                  output += chr( ( inv * ( ( ord(i) - 97 )- key2 )+26 ) %26+97)
             else :  output += chr( ( inv * ( ( ord(i) - 65 )- key2 )+26 ) %26+65)
 
@@ -73,13 +85,19 @@ def shift(type):
     key1=int(k1)
     if type[0] == 'e':
             for i in Input:  
-                if i.islower() : 
+                if i.isalpha() == False : 
+                    output += i
+                    continue
+                elif i.islower() : 
                     output += chr( ( (ord(i) - 97 ) + key1 ) %26+97)
                 else : output += chr( ( (ord(i) - 65 ) + key1 ) %26+65)
                 
     else:
         for i in Input:
-            if i.islower() : 
+            if i.isalpha() == False : 
+                    output += i
+                    continue
+            elif i.islower() : 
                 output += chr( ( (ord(i) - 97 )- key1+26 ) %26+97)
             else : output += chr( ( (ord(i) - 65 )- key1+26 ) %26+65)
                         
