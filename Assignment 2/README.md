@@ -12,7 +12,7 @@ Main idea :
 ---------------
 1) a^b =c if c^a=b then c^b=a
 
-2) If we notice in the file encryp.py all equation in encrypt funcation Depends on the ْ XOR operation and i can use the first step to decrypt this. 
+2) If we notice in the file encryp.py all equation in encrypt funcation Depends on the XOR operation and i can use the first step to decrypt this. 
 
 3) In decrypt function i reversed the two equations which exists in encrypt function because of decryption is a reverse order of encryption.
 
