@@ -28,5 +28,5 @@ Main idea :
     -  get c1 using b2,a1,d1       (c1 = b2 ^ (F(a1 ^ F(d1) ^ (a1 | d1))))
     -  get b1 using a2,a1,d1,c1    ( b1 =  a2 ^ (F(a1 | F(c1 ^ F(d1)) ^ F(a1 | c1) ^ d1)))
  
-6) After decryption all characters in encryption file remove all (#) characters
+6) After decryption all characters in flag file remove all (#) characters
   
