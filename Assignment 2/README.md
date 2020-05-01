@@ -10,7 +10,7 @@ ________________________________________
 
 The main idea :
 ---------------
-1) a^b =c if c^a=b then c^b=a
+1) if a^b =c ==> c^a=b ==> c^b=a
 
 2) If we notice in the file encryp.py all equation in encrypt funcation Depends on the XOR operation and i can use the first step to decrypt this. 
 
