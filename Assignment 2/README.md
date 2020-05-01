@@ -8,7 +8,7 @@ We found an encrypted secret and an encrypting machine. It seems to be a complic
 
 ________________________________________
 
-Main idea :
+The main idea :
 ---------------
 1) a^b =c if c^a=b then c^b=a
 
